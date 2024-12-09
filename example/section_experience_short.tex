@@ -10,36 +10,88 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 %Section: Work Experience at the top
-\sectionTitle{Expériences Professionelles}{\faSuitcase}
+\sectionTitle{Professional Experience}{\faSuitcase}
 %\renewcommand{\labelitemi}{$\bullet$}
 \begin{experiences}
   \experience
-    {Aujourd'hui}   {Architecte logiciel | Développeur/Concepteur Senior JEE}{EPI}{Nouvelle-Calédonie}
-    {Décembre 2015} {
+    {Now}   {Senior Software Engineer, Blockchain, L2}{\link{https://equilibrium.co/}{EQ Labs}}{Remote}
+    {Feb 2021}      {
                       \begin{itemize}
-                        \item Applications hybrides : Conception et développement
-                        \item Développements de micro services REST avec Spring Boot : Conception et développement
-                        \item Product Owner : Projet Simply City
-                        \item Reconstruction de la plateforme d'intégration
-                        \item Migration des projets Java sous Maven
-                        \item Evolutions et corrections des bugs du framework de développement interne  
+                        \item \github{eqlabs/pathfinder}
+                        \item \link{https://www.starknet.io}{Starknet} full state node in Rust
+                        \item Already in production, utilized by major API services (Infura et al.)
+                        \item Kicked off the project, major contributor
+                        \item Integrated \link{https://github.com/libp2p/rust-libp2p}{rust-libp2p} 
+                        \item Implemented the \textbf{p2p-stream} crate
+                        \begin{itemize}
+                          \item a “request – stream of responses” protocol
+                          \item which is a base for the P2P sync and consensus
+                        \end{itemize}
+                        \item Implemented Starknet P2P sync protocols and 2 sync modes
+                        \begin{itemize}
+                          \item \textbf{checkpoint sync} - bulk sync up to the latest L1 checkpoint
+                          \item \textbf{track sync} - block-by-block sync which takes over past the latest L1 checkpoint
+                        \end{itemize}
+                        \item Other major areas of work
+                        \begin{itemize}
+                          \item Feeder gateway sync
+                          \item SQlite based storage
+                          \item JSON RPC server
+                          \item Derive proc macros for easier P2P DTO generation
+                          \item Patricia-Merkle-Tries traversal for proof generation
+                          \item randomized fake block data generation for sync testing
+                          \item RPC load tests
+                        \end{itemize}
+                        \item Major crates utilized \newline
+                           \texttt{axum, clap, futures, hyper, libp2p, proc-macro2, proptest, prost, rayon, rusqlite, serde, tokio, tower, ...}
                       \end{itemize}
                     }
-                    {Spring Boot,IntelliJ Idea,Ionic 3,Typescript,Firebase,Apache Tomcat,Eclipse,Maven,Jenkins,Nexus}
+                    {Rust, libp2p, SQlite, git, Docker, tokio-console, github workflows}
   \emptySeparator
+  % IV 2018 – I 2021
+  % E-Fun / Promatic Group
+  % Senior Software Engineer, Lead & Architect
+  % New slot game engine/backend-
+  % Advocated use of modern technologies to boost productivity and quality and
+  % succeeded in convincing management to do so
+  % Kicked off the project and led it from day one
+  % Requirements gathering, technology selection, architectural considerations and
+  % design, active developer and major contributor
+  % Strong advocate of automation and testing, set up a CI pipeline prior to any
+  % development, maintained full unit test coverage ever since
+  % Created a new math engine which is 100x faster than legacy
+  % Project currently reaching MVP stage and already considered being adopted in
+  % areas where legacy performs unreliably in crucial deployments essential to the
+  % business
+  % Rust (tokio, tonic, warp, bindgen, mockall, criterion, serde, kcov, …), Jenkins, bash
+  % Legacy slot game engine
+  % – Implementing new features and standardized communication protocols,
+  % extending API, detangling large code base (~800k SLOC) used in standalone,
+  % VLT, and online segments of the business
+  % – Helping colleagues developing a new gambling framework front-end (C++, Qt,
+  % OpenGL) especially in tasks that require legacy code understanding, with
+  % system integration issues, maintaining code quality and architectural
+  % improvements
+  % – Mentoring other team members
+  % – Developed a docker-based solution for testing the API of the legacy game server
+  % in a tester-friendly way
+  % C (~80%) C++11 (~20%), python, Docker, Qt5.8, googletest, CMake, git, svn,
+  % confluence, JIRA, 1M+ SLOC
+
   \experience
-    {Novembre 2015} {Architecte logiciel | Développeur/Concepteur Senior JEE}{\link{http://www.cafat.nc}{CAFAT}}{Nouvelle-Calédonie}
-    {Avril 2014}    {
+    {Jan 2021} {Senior Software Engineer | Lead | Architect}{E-Fun / Promatic Group}{Warsaw, partially remote}
+    {Apr 2018}    {
                       \begin{itemize}
-                        \item Support et encadrement technique des équipes de développement                           
-                        \item Suivi, validation et intégration des développements externalisés                        
-                        \item Implémentation, analyse et livraison de correctifs de bugs sur les applicatifs métiers  
-                        \item Evolutions et corrections des bugs du framework de développement interne                
-                        \item Rédaction des dossiers d'architecture en collaboration avec les architectes fonctionnels
-                        \item Veille technologique                                                                    
+                        \item New slot game engine/backend
+                        \item Kicked off the project and led it from day one
+                        \item Requirements gathering, technology selection, architectural considerations and design, active developer and major contributor
+                        \item Strong advocate of automation and testing, set up a CI pipeline prior to any development, maintained full unit test coverage ever since
+                        \item Created a new math engine which is 100x faster than legacy
+                        \item Major crates utilized \newline
+                        \texttt{bindgen, criterion, mockall, tokio, tonic, serde, warp, ...}
                       \end{itemize}
                     }
-                    {IntelliJ Idea,JBoss EAP,Eclipse,Maven,Jenkins,Nexus}
+                    {Rust, Jenkins, bash, JIRA, confluence}
   \emptySeparator
   \experience
     {Mars 2014}     {Architecte logiciel | Développeur/Concepteur Senior JEE}{Bull SAS}{France}
